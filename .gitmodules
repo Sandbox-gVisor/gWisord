@@ -1,0 +1,9 @@
+[submodule "Broker"]
+	path = include/broker
+	url = https://github.com/Sandbox-gVisor/broker.git
+[submodule "WsServer"]
+	path = include/ws_server
+	url = https://github.com/Sandbox-gVisor/ws_server.git
+[submodule "WebView"]
+	path = include/WebView
+	url = https://github.com/Sandbox-gVisor/WebView.git
