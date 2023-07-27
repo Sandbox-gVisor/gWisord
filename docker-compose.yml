@@ -7,7 +7,7 @@ services:
 
   broker:
     environment:
-      - REDIS_ADDR='redis:6379'
+      - REDIS_ADDR=redis:6379
     depends_on:
       - redis
     build: ./broker/
@@ -16,7 +16,7 @@ services:
 
   wsserver:
     environment:
-      - REDIS_ADDR='redis:6379'
+      - REDIS_ADDR=redis://redis:6379
     depends_on:
       - redis
     build: ./ws_server/
