@@ -1,0 +1,20 @@
+version: '3.4'
+services:
+  redis:
+    image: 'redis:alpine'
+    ports:
+      - "6379:6379"
+
+  broker:
+    depends_on:
+      - redis
+    build: ./broker/
+    ports:
+      - "12001:12001"
+
+  wsserver:
+    depends_on:
+      - redis
+    build: ./ws_server/
+    ports:
+      - "3001:3001"
