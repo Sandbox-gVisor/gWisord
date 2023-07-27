@@ -1,6 +1,7 @@
 [submodule "broker"]
 	path = broker
 	url = https://github.com/Sandbox-gVisor/broker.git
+	branch = main
 [submodule "ws_server"]
 	path = ws_server
 	url = https://github.com/Sandbox-gVisor/ws_server.git
