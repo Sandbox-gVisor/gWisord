@@ -9,4 +9,4 @@
 [submodule "WebView"]
 	path = WebView
 	url = https://github.com/Sandbox-gVisor/WebView.git
-	branch = dev
+	branch = main
